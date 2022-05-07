@@ -29,5 +29,6 @@ class Solution {
         int trap = solution.trap(height);
         System.out.println(trap);
         System.out.println(123);
+        System.out.println(456);
     }
 }
