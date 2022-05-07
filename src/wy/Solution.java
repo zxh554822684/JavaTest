@@ -31,7 +31,7 @@ class Solution {
         System.out.println(123);
         System.out.println(456);
         System.out.println("3test");
-        int c = 54;
+        int c = 54, b = 63;
         System.out.println("4test");
         System.out.println("hot-fix");
         System.out.println("hot test");
