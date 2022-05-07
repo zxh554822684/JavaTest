@@ -34,5 +34,6 @@ class Solution {
         int c = 54;
         System.out.println("4test");
         System.out.println("hot-fix");
+        System.out.println("5");
     }
 }
