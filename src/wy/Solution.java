@@ -39,5 +39,6 @@ class Solution {
         System.out.println("hot test2");
         System.out.println("hot test");
         System.out.println("push GitHub");
+        System.out.println("pull GitHub"); 
     }
 }
