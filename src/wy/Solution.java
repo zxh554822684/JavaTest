@@ -35,5 +35,6 @@ class Solution {
         System.out.println("4test");
         System.out.println("hot-fix");
         System.out.println("5");
+        System.out.println("hot test");
     }
 }
