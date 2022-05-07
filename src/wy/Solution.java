@@ -31,5 +31,6 @@ class Solution {
         System.out.println(123);
         System.out.println(456);
         System.out.println("3test");
+        System.out.println("4test");
     }
 }
