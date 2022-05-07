@@ -30,5 +30,6 @@ class Solution {
         System.out.println(trap);
         System.out.println(123);
         System.out.println(456);
+        System.out.println("3test");
     }
 }
