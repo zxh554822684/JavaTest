@@ -38,5 +38,6 @@ class Solution {
         System.out.println("master test");
         System.out.println("hot test2");
         System.out.println("hot test");
+        System.out.println("push GitHub");
     }
 }
