@@ -32,6 +32,7 @@ class Solution {
     public static void main(String[] args) {
         int[] nums = {1, 2, 5, 6, 7};
         Solution solution = new Solution();
+        int a = 3;
         List<List<Integer>> list = solution.permute(nums);
         System.out.println(list);
     }
