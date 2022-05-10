@@ -3,42 +3,32 @@ package wy;
 import java.util.*;
 
 class Solution {
-    public int trap(int[] height) {
-        int left = 0, right = height.length - 1;
-        int leftMax = 0, rightMax = 0;
-        int res = 0;
-        while(left < right) {
-            leftMax = Math.max(height[left], leftMax);
-            rightMax = Math.max(height[right], rightMax);
-            if(height[left] < height[right]) {
-                res += leftMax - height[left];
-                left++;
-            }
-            if(height[left] >= height[right]) {
-                res += rightMax - height[right];
-                right--;
-            }
-        }
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        dfs(0, res, nums);
         return res;
+    }
+    public void dfs(int n, List<List<Integer>> res, int[] nums) {
+        if(n == nums.length) {
+            List<Integer> list = new ArrayList<>();
+            for (int num : nums) {
+                list.add(num);
+            }
+            res.add(list);
+            return;
+        }
+        for(int i = n; i < nums.length; i++) {
+            int temp = nums[n];
+            nums[n] = nums[i];
+            nums[i] = temp;
+            dfs(n + 1, res, nums);
+            temp = nums[n];
+            nums[n] = nums[i];
+            nums[i] = temp;
+        }
     }
 
     public static void main(String[] args) {
-        int[] height = {4,2,0,3,5};
-        int left, ri = 0;
-        Solution solution = new Solution();
-        int trap = solution.trap(height);
-        System.out.println(trap);
-        System.out.println(123);
-        System.out.println(456);
-        System.out.println("3test");
-        int c = 54, b = 63;
-        System.out.println("4test");
-        System.out.println("hot-fix");
-        System.out.println("hot test");
-        System.out.println("master test");
-        System.out.println("hot test2");
-        System.out.println("hot test");
-        System.out.println("push GitHub");
-        System.out.println("pull GitHub"); 
+
     }
 }
