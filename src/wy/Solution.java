@@ -30,7 +30,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 4};
+        int[] nums = {1, 2, 5,6};
         Solution solution = new Solution();
         List<List<Integer>> list = solution.permute(nums);
         System.out.println(list);
